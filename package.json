@@ -1,0 +1,23 @@
+{
+  "name": "todoist-box",
+  "version": "1.0.0",
+  "description": "📊 Update a gist to contain your Todoist stats",
+  "author": "Josh Ghent <me@joshghent.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build index.js --out dist --minify --target es2022"
+  },
+  "dependencies": {
+    "@actions/github": "^5.1.1",
+    "@octokit/rest": "19.0.11",
+    "dotenv": "16.3.1",
+    "humanize-number": "0.0.2",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.36.1",
+    "husky": "8.0.3",
+    "prettier": "2.8.8",
+    "pretty-quick": "3.1.3"
+  }
+}

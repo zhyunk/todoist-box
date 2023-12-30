@@ -1,0 +1,24 @@
+name: Todoist Box
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  push:
+    branches: master
+  workflow_dispatch:
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 16
+      - name: Update gist
+        uses: joshghent/todoist-box@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+          TODOIST_API_KEY: ${{ secrets.TODOIST_API_KEY }}
