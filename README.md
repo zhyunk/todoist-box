@@ -1,7 +1,7 @@
 <p align="center">
   <img width="400" src="screenshot.png">
   <h3 align="center">todoist-box</h3>
-  <p align="center">⚡️📌 Update a pinned gist to contain your Todoist stats</p>
+  <p align="center">⚡️📌 Update a pinned gist to contain your Todoist stats ☑️</p>
 </p>
 
 ---
